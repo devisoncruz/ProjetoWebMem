@@ -3,51 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = [
       {
         name: 'aquamen',
-        img: 'images/aquamen.png'
+        img: 'imagens/aquamen.png'
       },
       {
         name: 'Batman',
-        img: 'images/Batman.png'
+        img: 'imagens/Batman.png'
       },
       {
         name: 'Flash',
-        img: 'images/Flash.png'
+        img: 'imagens/Flash.png'
       },
       {
         name: 'Lanterna',
-        img: 'images/Lanterna.png'
+        img: 'imagens/Lanterna.png'
       },
       {
         name: 'Mulher_mara',
-        img: 'images/Mulher_mara.png'
+        img: 'imagens/Mulher_mara.png'
       },
       {
         name: 'Super_man',
-        img: 'images/Super_man.png'
+        img: 'imagens/Super_man.png'
       },
       {
         name: 'aquamen',
-        img: 'images/aquamen.png'
+        img: 'imagens/aquamen.png'
       },
       {
         name: 'Batman',
-        img: 'images/Batman.png'
+        img: 'imagens/Batman.png'
       },
       {
         name: 'Flash',
-        img: 'images/Flash.png'
+        img: 'imagens/Flash.png'
       },
       {
         name: 'Lanterna',
-        img: 'images/Lanterna.png'
+        img: 'imagens/Lanterna.png'
       },
       {
         name: 'Mulher_mara',
-        img: 'images/Mulher_mara.png'
+        img: 'imagens/Mulher_mara.png'
       },
       {
         name: 'Super_man',
-        img: 'images/Super_man.png'
+        img: 'imagens/Super_man.png'
       },
     ]
   
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
       for (let i = 0; i < cards.length; i++) {
         const card = document.createElement('img')
-        card.setAttribute('src', 'images/board.png')
+        card.setAttribute('src', 'imagens/board.png')
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
         board.appendChild(card)
@@ -80,21 +80,21 @@ document.addEventListener('DOMContentLoaded', () => {
       
       //verificar clique na mesma imagem 
       if(optionOneId == optionTwoId) {
-        cards[optionOneId].setAttribute('src', 'images/board.png')
-        cards[optionTwoId].setAttribute('src', 'images/board.png')
+        cards[optionOneId].setAttribute('src', 'imagens/board.png')
+        cards[optionTwoId].setAttribute('src', 'imagens/board.png')
         alert('Você clicou na mesma imagem')
       }
       //verificar combinação se click em imagens diferentes
       else if (cardsChosen[0] === cardsChosen[1]) {
         alert('Você encontrou uma combinação')
-        cards[optionOneId].setAttribute('src', 'images/check.png')
-        cards[optionTwoId].setAttribute('src', 'images/check.png')
+        cards[optionOneId].setAttribute('src', 'imagens/check.png')
+        cards[optionTwoId].setAttribute('src', 'imagens/check.png')
         cards[optionOneId].removeEventListener('click', flipCard)
         cards[optionTwoId].removeEventListener('click', flipCard)
         cardsWon.push(cardsChosen)
       } else {
-        cards[optionOneId].setAttribute('src', 'images/board.png')
-        cards[optionTwoId].setAttribute('src', 'images/board.png')
+        cards[optionOneId].setAttribute('src', 'imagens/board.png')
+        cards[optionTwoId].setAttribute('src', 'imagens/board.png')
         alert('Errou, tente novamente')
       }
       cardsChosen = []
