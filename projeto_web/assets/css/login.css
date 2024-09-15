@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+
+
 .login-form {
     align-items: center;
     display: flex;
@@ -15,15 +19,17 @@
 }
 
 .login_header h1 {
+    font-family: "Handjet", sans-serif;
     color: rgb(77, 77, 77);
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 .login_input {
+    font-family: "Handjet", sans-serif;
     border: 2px solid rgb(77, 77, 77);
     border-radius: 5px;
     color: rgb(77, 77, 77);
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 15px;
     max-width: 300px;
     outline: none;
@@ -32,11 +38,12 @@
 }
 
 .login_button {
+    font-family: "Handjet", sans-serif;
     background-color: rgb(24, 24, 24);
     border-radius: 5px;
     color: rgb(255, 253, 253);
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.5em;
     max-width: 300px;
     padding: 15px;
     width: 100%;
